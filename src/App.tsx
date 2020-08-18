@@ -5,7 +5,9 @@ import { Card } from "./components";
 import { SocialIcon } from "react-social-icons";
 
 function App() {
-  const avatar = <img src={headshot} className="Avatar" />;
+  const avatar = (
+    <img src={headshot} className="Avatar" alt="Profile headshot" />
+  );
   const iconStyle = {
     width: 30,
     height: 30,
