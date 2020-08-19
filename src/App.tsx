@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+
 import headshot from "./assets/headshot.png";
 import { Card } from "./components";
 import { SocialIcon } from "react-social-icons";
