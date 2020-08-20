@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy-production": "react-scripts build && scp -r ./build/* josh@161.35.11.181:/var/www/joshbaker.io/html",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
