@@ -6,9 +6,12 @@ import { Card, Toggle } from "./components";
 import { SocialIcon } from "react-social-icons";
 
 function App() {
-  const [darkModeEnabled, setDarkModeEnabled] = useState<boolean>(false);
+  const [darkModeEnabled, setDarkModeEnabled] = useState<boolean>(
+    localStorage.getItem("darkModeEnabled") === "true"
+  );
 
   const handleToggleDarkMode = () => {
+    localStorage.setItem("darkModeEnabled", `${!darkModeEnabled}`);
     setDarkModeEnabled(!darkModeEnabled);
   };
 

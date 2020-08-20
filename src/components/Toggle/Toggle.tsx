@@ -10,7 +10,7 @@ const Toggle = ({ checked, onPress }: Props) => {
     <div className="ToggleWrapper" onClick={onPress}>
       <p>
         {checked ? "Disable" : "Enable"} dark mode{" "}
-        <input type="checkbox" checked={checked} />
+        <input type="checkbox" checked={checked} readOnly />
       </p>
     </div>
   );
